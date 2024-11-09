@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GAG.GameMetricsAndStats
 {
-    public class Events
+    public class MetricsAndStatsEvents
     {
         public static event Action<float, float> OnTimerIncChanged;
         public static event Action<float, float> OnTimerDecChanged;

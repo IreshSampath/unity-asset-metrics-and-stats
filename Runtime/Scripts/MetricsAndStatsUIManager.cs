@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace GAG.GameMetricsAndStats
 {
-    public class UIManager : MonoBehaviour
+    public class MetricsAndStatsUIManager : MonoBehaviour
     {
         [SerializeField] TMP_Text _timerIncTxt;
         [SerializeField] TMP_Text _timerDecTxt;
@@ -18,19 +18,19 @@ namespace GAG.GameMetricsAndStats
         private void OnEnable()
         {
             // Subscribe to events with methods for better readability
-            Events.OnTimerIncChanged += UpdateTimerIncUI;
-            Events.OnTimerDecChanged += UpdateTimerDecUI;
-            Events.OnHealthChanged += UpdateHealthUI;
-            Events.OnScored += UpdateScoreUI;
+            MetricsAndStatsEvents.OnTimerIncChanged += UpdateTimerIncUI;
+            MetricsAndStatsEvents.OnTimerDecChanged += UpdateTimerDecUI;
+            MetricsAndStatsEvents.OnHealthChanged += UpdateHealthUI;
+            MetricsAndStatsEvents.OnScored += UpdateScoreUI;
         }
 
         private void OnDisable()
         {
             // Unsubscribe from events to avoid potential memory leaks
-            Events.OnTimerIncChanged -= UpdateTimerIncUI;
-            Events.OnTimerDecChanged -= UpdateTimerDecUI;
-            Events.OnHealthChanged -= UpdateHealthUI;
-            Events.OnScored -= UpdateScoreUI;
+            MetricsAndStatsEvents.OnTimerIncChanged -= UpdateTimerIncUI;
+            MetricsAndStatsEvents.OnTimerDecChanged -= UpdateTimerDecUI;
+            MetricsAndStatsEvents.OnHealthChanged -= UpdateHealthUI;
+            MetricsAndStatsEvents.OnScored -= UpdateScoreUI;
         }
 
         private void UpdateTimerIncUI(float time, float fill)

@@ -34,16 +34,10 @@ namespace GAG.GameMetricsAndStats
             }
 
             float fillValueInc = math.remap(_startTime, _EndTime, 0, 1, _currentTime);
-            Events.RaiseOnTimerIncChanged(_currentTime, fillValueInc);
+            MetricsAndStatsEvents.RaiseOnTimerIncChanged(_currentTime, fillValueInc);
 
             float fillValueDec = math.remap(_startTime, _EndTime, 1, 0, _currentTime);
-            Events.RaiseOnTimerDecChanged(_EndTime - _currentTime, fillValueDec);
-        }
-
-        public void ResetTimer() // This is not working
-        {
-            _currentTime = _startTime;
-            UpdateTimer();
+            MetricsAndStatsEvents.RaiseOnTimerDecChanged(_EndTime - _currentTime, fillValueDec);
         }
 
         public void SetHealth(int healthChange)
@@ -51,13 +45,13 @@ namespace GAG.GameMetricsAndStats
             _currentHealth = Mathf.Clamp(_currentHealth + healthChange, _minHealth, _maxHealth);
 
             float fillValue = math.remap(_maxHealth, _minHealth, 1, 0, _currentHealth);
-            Events.RaiseOnHealthChanged(_currentHealth, fillValue);
+            MetricsAndStatsEvents.RaiseOnHealthChanged(_currentHealth, fillValue);
         }
 
         public void SetScore(int scoreChange)
         {
             _currentScore = Mathf.Max(_currentScore + scoreChange, _minScore);
-            Events.RaiseOnScored(_currentScore);
+            MetricsAndStatsEvents.RaiseOnScored(_currentScore);
         }
     }
 }
