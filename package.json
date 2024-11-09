@@ -1,0 +1,34 @@
+﻿{
+  "name": "com.ireshsampath.unity-assets.metrics-and-stats",
+  "version": "1.0.0",
+  "displayName": "Metrics and Stats Manager",
+  "description": "This asset provides a comprehensive solution for tracking and managing game metrics and stats in Unity, including scoring, health management, and timers. Perfect for adding robust game performance tracking and UI feedback to your project.",
+  "unity": "6000.0",
+  "unityRelease": "25f1",
+  "documentationUrl": "https://example.com/metrics-and-stats-docs",
+  "changelogUrl": "https://example.com/metrics-and-stats-changelog.html",
+  "licensesUrl": "https://example.com/metrics-and-stats-licensing.html",
+  "dependencies": {},
+  "samples": [
+    {
+      "displayName": "Metrics and Stats Sample",
+      "description": "An example scene demonstrating the use of metrics and stats management for scoring, health, and timers.",
+      "path": "Samples~/Sample 1"
+    }
+  ],
+  "keywords": [
+    "metrics",
+    "stats",
+    "scoring",
+    "health",
+    "timers",
+    "Unity",
+    "game metrics",
+    "game stats"
+  ],
+  "author": {
+    "name": "Iresh Sampath",
+    "email": "ireshsampath@gmail.com",
+    "url": "https://ireshsampath.portfoliobox.io/"
+  }
+}
