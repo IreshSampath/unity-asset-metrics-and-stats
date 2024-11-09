@@ -10,7 +10,7 @@ namespace GAG.GameMetricsAndStats
         public static event Action<int, float> OnHealthChanged;
         public static event Action<int> OnScored;
 
-        // Optional: Add helper methods to raise events safely if needed
+        // helper methods to raise events safely
         public static void RaiseOnTimerIncChanged(float time, float fill)
         {
             OnTimerIncChanged?.Invoke(time, fill);
