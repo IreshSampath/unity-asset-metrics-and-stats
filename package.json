@@ -9,7 +9,7 @@
   "changelogUrl": "https://example.com/metrics-and-stats-changelog.html",
   "licensesUrl": "https://example.com/metrics-and-stats-licensing.html",
   "dependencies": {
-	  "com.unity.textmeshpro": "4.0.0"
+	  "com.unity.textmeshpro": "5.0.0"
   },
   "samples": [
     {
