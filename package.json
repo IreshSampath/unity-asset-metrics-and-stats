@@ -8,7 +8,9 @@
   "documentationUrl": "https://example.com/metrics-and-stats-docs",
   "changelogUrl": "https://example.com/metrics-and-stats-changelog.html",
   "licensesUrl": "https://example.com/metrics-and-stats-licensing.html",
-  "dependencies": {},
+  "dependencies": {
+	  "com.unity.textmeshpro": "4.0.0"
+  },
   "samples": [
     {
       "displayName": "Metrics and Stats Sample",
