@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GAG.GameMetricsAndStats
 {
-    public class GameManager : MonoBehaviour
+    public class MetricsAndStatsGameManager : MonoBehaviour
     {
         // Timer parameters
         float _currentTime = 0;
